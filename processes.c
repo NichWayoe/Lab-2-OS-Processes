@@ -2,6 +2,11 @@
 #include <stdlib.h>
 #include <unistd.h>
 #include <time.h>
+
+// Nicholas Wayoe
+// 9380317
+
+
 int genRandonNumber(int lower, int upper) {
  return ((random() % (upper - lower)) + lower);
 }
