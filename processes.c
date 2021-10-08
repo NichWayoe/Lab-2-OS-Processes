@@ -28,13 +28,19 @@ int main(int argc, char * argv[]) {
    int    i; 
    pid = fork();
    if (pid == 0) {
-        ChildProcess();}
+        ChildProcess();
+   }
+   else if (pid == -1) {
+     exit(1);
+   }
    else {
      pid = fork();
      if (pid == 0) {
        ChildProcess();
-       
        } 
+     else if (pid == -1) {
+       exit(1);
+     }
      else {
        for (i=0; i<2; i++){
        pid = wait(NULL);
