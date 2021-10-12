@@ -4,7 +4,7 @@
 #include <time.h>
 
 // Nicholas Wayoe
-// 9380317
+// 02903830
 
 
 int genRandonNumber(int lower, int upper) {
